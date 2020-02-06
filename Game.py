@@ -389,6 +389,9 @@ def second_round():
                     screen.blit(room, (0, 0))
                     screen.blit(babysit, (600, y1 + 100))
                 if event.key == pygame.K_ESCAPE:
+                    my_file = open("save.txt", "w")
+                    my_file.write('second_round()')
+                    my_file.close()
                     pygame.quit()
                     sys.exit()
         if g:
@@ -455,6 +458,9 @@ def third_round():
                 if event.key == pygame.K_s and not p:
                     p = True
                 if event.key == pygame.K_ESCAPE:
+                    my_file = open("save.txt", "w")
+                    my_file.write('third_round()')
+                    my_file.close()
                     pygame.quit()
                     sys.exit()
         if p:
