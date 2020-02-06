@@ -111,6 +111,14 @@ def game_intro():
             if xContinue < mouse[0] < xContinue + 220 and yContinue < mouse[1] < yContinue + 95:
                 continueImage = buttons("continue2.png")
                 screen.blit(continueImage, (xContinue, yContinue))
+                if click[0] == 1:
+                    my_file = open('save.txt', 'r')
+                    my_string = my_file.read()
+                    my_file.close()
+                    if my_string == '':
+                        first_round()
+                    else:
+                        my_string
             else:
                 continueImage = buttons("continue1.png")
                 screen.blit(continueImage, (xContinue, yContinue))
@@ -189,6 +197,14 @@ def wm():
             if xContinue < mouse[0] < xContinue + 220 and yContinue < mouse[1] < yContinue + 95:
                 continueImage = buttons("continue2.png")
                 screen.blit(continueImage, (xContinue, yContinue))
+                if click[0] == 1:
+                    my_file = open('save.txt', 'r')
+                    my_string = my_file.read()
+                    my_file.close()
+                    if my_string == '':
+                        first_round()
+                    else:
+                        my_string
             else:
                 continueImage = buttons("continue1.png")
                 screen.blit(continueImage, (xContinue, yContinue))
