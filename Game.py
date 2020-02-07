@@ -118,7 +118,10 @@ def game_intro():
                     if my_string == '':
                         first_round()
                     else:
-                        my_string
+                        if my_string == 'second_round()':
+                            second_round()
+                        elif my_string == 'third_round()':
+                            third_round()
             else:
                 continueImage = buttons("continue1.png")
                 screen.blit(continueImage, (xContinue, yContinue))
@@ -204,7 +207,10 @@ def wm():
                     if my_string == '':
                         first_round()
                     else:
-                        my_string
+                        if my_string == 'second_round()':
+                            second_round()
+                        elif my_string == 'third_round()':
+                            third_round()
             else:
                 continueImage = buttons("continue1.png")
                 screen.blit(continueImage, (xContinue, yContinue))
